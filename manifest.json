@@ -1,0 +1,25 @@
+{
+
+  "manifest_version":2,
+  "name":"Automate eAdmin",
+  "description": "I excel at making bad extensions",
+  "version": "1.0.0",
+  "icons":{"128":"images/icon.png"},
+  "content_scripts": [
+  {
+    "matches": ["http://eadmin.ebscohost.com/EAdmin/Profiles/CustomizeServiceDatabasesForm.aspx","https://eadmin.ebscohost.com/EAdmin/Profiles/CustomizeServiceDatabasesForm.aspx"],
+    "js": ["js/functions.js","content_script.js"]
+  }
+],
+   "browser_action":{
+     "default_icon":"images/icon.png",
+     "default_popup":"popup.html"
+   },
+   "permissions": [
+    "tabs","management","storage"
+  ]
+
+  }
+
+
+  
